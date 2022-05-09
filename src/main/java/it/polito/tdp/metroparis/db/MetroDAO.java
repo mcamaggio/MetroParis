@@ -155,7 +155,7 @@ public class MetroDAO {
 		
 		try {
 			Connection conn = DBConnect.getConnection();
-			PreparedStatement st = conn.prepareStatement(sql);
+			PreparedStatement st = conn.prepareStatement(sql2);
 			st.setInt(1, partenza.getIdFermata());
 			ResultSet rs = st.executeQuery();
 			
